@@ -2,9 +2,12 @@
 The task were written by: Shahar Niknazar - 316416668 Or Gamliel - 208202663
 
 We have 3 classes in our project:
-DGraph  - shaped as array lists of monomials.
-Graph_Algo – shaped like a*x^b, when a is a real number and b is an integer(should be positive).
-stdDraw  - shaped as array lists of monomials.
+DGraph  - implements the interface "graph" and represents a directional weighted graph.
+ * The interface has a road-system or communication network in mind - and should support a large number of nodes (over 100,000).
+ * The implementation based on an efficient compact representation.
+ 
+Graph_Algo –  implements the interface "graph_algorithms", represents bunch of algorithms based on the graph we've created in DGraph. 
+GUI  - 
 
 
 
