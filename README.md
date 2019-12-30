@@ -1,13 +1,16 @@
 # Ex2
 The task were written by: Shahar Niknazar - 316416668 Or Gamliel - 208202663
 
-We have 3 classes in our project:
+We have 5 classes in our project:
 DGraph  - implements the interface "graph" and represents a directional weighted graph.
  * The interface has a road-system or communication network in mind - and should support a large number of nodes (over 100,000).
  * The implementation based on an efficient compact representation.
  
-Graph_Algo –  implements the interface "graph_algorithms", represents bunch of algorithms based on the graph we've created in DGraph. 
-GUI  - 
+Graph_Algo –  Implements the interface "graph_algorithms", represents bunch of algorithms based on the graph we've created in DGraph.
+Vertex - Implements the interface node_data, represents a vertex in our graph
+Edge - Implements the interface edge_data, represents a vertex in our graph
+GUI  - This class represents a graphical interface here we can display a graph, Run algorithms on it and View their results.
+
 
 
 
@@ -37,7 +40,7 @@ DGraph class have few functions:
 11) **getMC()** 
 
 
-The class have 3 constructors:
+DGraph class have _ constructors:
 
 Default constructor.
 Copy constructor.
@@ -67,14 +70,28 @@ Graph_Algo class have few functions:
 
 
 
-The class have 3 constructors:
-default constructor.
-string constructor - get string of polynom and make it to new polynom.
-copy constructor.
-Polynom class have few functions:
+Graph_Algo class have 3 constructors:
+*
+*
+*
+
+
+Vertex class have few functions:
+*
+*
+*
+ class have 3 constructors:
+ *
+ *
+ *
+
+Edge class have few functions:
+*
+*
+*
 
 
 
-stdDraw:
+GUI:
 
 This class represents a graphical interface here we can display a graph, Run algorithms on it and View their results.
