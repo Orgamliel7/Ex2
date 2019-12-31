@@ -1,5 +1,9 @@
 # Ex2
-The task were written by: Shahar Niknazar - 316416668 Or Gamliel - 208202663
+This Object oriented programming task were written by:
+* Shahar Niknazar - 316416668 
+* Or Gamliel - 208202663
+
+The main topic is Graphs, algorithems on it, represented by GUI.
 
 We have 5 classes in our project:
 DGraph  - implements the interface "graph" and represents a directional weighted graph.
@@ -14,84 +18,34 @@ GUI  - This class represents a graphical interface here we can display a graph, 
 
 
 
-DGraph class have few functions:
+Our graph have few methods:
 
-
-1) **getNode(int key)**
-
-2) **getEdge(int src, int dest)**
-
-3) **addNode(node_data n)**
-
-4) **connect(int src, int dest, double w)**
-
-5) **Collection<node_data> getV()** 
-
-6) **Collection<edge_data> getE(int node_id)**
-
-7) **node_data removeNode(int key)**
-
-8) **edge_data removeEdge(int src, int dest)** 
-
-9) **nodeSize()** 
-
-10) **edgeSize()** 
-
-11) **getMC()** 
-
-
-DGraph class have _ constructors:
-
-Default constructor.
-Copy constructor.
-String constructor - get string of monom and turn it to new monom.
-we also have getters and setters:
-
-power getter and setter.
-coefficient getter and setter.
-
-Graph_Algo class have few functions:
-
-1) **init(graph g)**
-
-2) **graph copy()** 
-
-3) **init(String file_name)** 
-
-4) **save(String file_name)** 
-
-5) **isConnected()** 
-
-6) **shortestPathDist(int src, int dest)** 
-
-7) **List<node_data> shortestPath(int src, int dest)** 
-
-8) **List<node_data> TSP(List<Integer> targets)** 
+1) **getV** - returns a collection that contains all the vertecis.
+2) **getE** - returns a collection of edges of a given vertex key.
+3) **removeNode** - remove the node and all the linked edges.
+4) **removeEdge** - remove the edge with a  source and destination as input.
+5) **addNode** - add a node to the graph.
+6) **getNode** - returns the node with a given node key.
+7) **connect** - initialize an edge from source node to destination with weight as input.
+8) **getEdge** - initialize the edge of source and destination as input.
 
 
 
-Graph_Algo class have 3 constructors:
-*
-*
-*
 
+Graph_Algo class have few methods:
 
-Vertex class have few functions:
-*
-*
-*
- class have 3 constructors:
- *
- *
- *
-
-Edge class have few functions:
-*
-*
-*
-
+1) **shortestPathDist** - returns the shortest distance from source to destination using dijkstra algorithem.
+2) **shortestPath** - returns the shortest path from the source to destination using dijkstra algorithem.
+3) **TSP** -from list of keys as input , the function will calculate and return the shortest path between all the vertices.
+4) **init** - initialize a graph from an input file.
+5) **save** - save a graph to a file.
+6) **isConnected** - checks whether the graph is strongly connected.
 
 
 GUI:
 
-This class represents a graphical interface here we can display a graph, Run algorithms on it and View their results.
+This class represents a graphical interface. Here we can display a graph, Run algorithms on it and View their results.
+
+
+
+
